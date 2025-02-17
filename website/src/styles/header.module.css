@@ -1,0 +1,28 @@
+:root {
+    --charcoal: #424651;
+    --snow: #fffbfa;
+    --spring_green: #21FA90;
+    --office_green: #157F1F;
+    --lion: #AD8A64;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --charcoal: #424651;
+      --snow: #fffbfa;
+      --spring_green: #21FA90;
+      --office_green: #157F1F;
+      --lion: #AD8A64;
+    }
+  }
+
+.header_title {
+    color: var(--snow);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
