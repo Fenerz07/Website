@@ -1,0 +1,33 @@
+:root {
+    --charcoal: #424651;
+    --snow: #fffbfa;
+    --spring_green: #21FA90;
+    --office_green: #157F1F;
+    --lion: #AD8A64;
+}
+
+.homePage {
+    color: var(--snow);
+    text-align: center;
+    padding-top: 14rem;
+}
+
+.homePage h1 {
+    font-size: 60px;
+    font-family: 'Arial';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.homePage p {
+    font-size: 20px;
+}
+
+.rotatingText {
+    animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}

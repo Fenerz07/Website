@@ -18,11 +18,11 @@
 
 .header_title {
     color: var(--snow);
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     font-family: 'Arial';
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
