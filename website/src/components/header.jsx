@@ -1,24 +1,31 @@
 'use client';
 
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from '../styles/header.module.css';
 
 export default function Header() {
-    const location = useLocation();
+    const pathname = usePathname();
 
-    const getTitle = (pathname) => {
+    const getTitle = () => {
         switch (pathname) {
             case '/':
                 return 'HomePage';
+            case '/about':
+                return 'AboutPage';
+            case '/contact':
+                return 'ContactPage';
             default:
-                return '😅';
+                return '😅 Page inconnue';
         }
     };
 
     return (
-        <header>
-            <h1 className={styles.header_title}><a href="/">{getTitle(location.pathname)}</a></h1>
+        <header className={styles.header}>
+            <h1 className={styles.header_title}>
+                <Link href="/">{getTitle()}</Link>
+            </h1>
         </header>
     );
 }

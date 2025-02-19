@@ -1,20 +1,33 @@
 'use client';
 
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import styles from '../styles/homePage.module.css';
 
-import Header from '../components/header';
-import CustomCursor from '../components/customCursor';
-import HomePage from '../components/homePage';
+export default function HomePage() {
+    const texts = ["Bienvenue", "Welcome", "Witaj"];
+    const [currentText, setCurrentText] = useState(texts[0]);
 
-export default function Home() {
-  return (
-    <Router>
-      <CustomCursor />
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
-  );
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentText(prevText => {
+                const currentIndex = texts.indexOf(prevText);
+                const nextIndex = (currentIndex + 1) % texts.length;
+                return texts[nextIndex];
+            });
+        }, 2950);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className={styles.homePage}>
+            <h1 className={styles.rotatingText}>{currentText}</h1>
+            <p>Vous êtes sur la page principal de mon portfolio
+                <br/>
+                Vous pouvez naviguer sur les différentes pages en cliquant sur [à remplir]
+                <br/>
+                Bonne visite à vous!
+            </p>
+        </div>
+    );
 }
