@@ -11,11 +11,11 @@ export default function Header() {
     const getTitle = () => {
         switch (pathname) {
             case '/':
-                return 'HomePage';
+                return 'Accueil';
             case '/about':
-                return 'AboutPage';
+                return 'À propos';
             case '/contact':
-                return 'ContactPage';
+                return 'Me Contacter';
             default:
                 return '😅 Page inconnue';
         }

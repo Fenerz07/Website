@@ -1,19 +1,83 @@
+:root {
+  --charcoal: #424651;
+  --snow: #fffbfa;
+  --spring_green: #21FA90;
+  --office_green: #157F1F;
+  --lion: #AD8A64;
+}
+
 .page {
-    transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  color: var(--snow);
+  text-align: center;
+  padding-top: 10rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .page-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page p {
+  font-size: 20px;
+  opacity: 0;
+  animation: fadeText 1.2s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeText {
+  from {
     opacity: 0;
   }
-  
-  .page-enter-active {
+  to {
     opacity: 1;
   }
-  
-  .page-exit {
-    opacity: 1;
-  }
-  
-  .page-exit-active {
+}
+
+.content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3rem;
+  margin: 4rem 8rem;
+}
+
+.content img {
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: bounceIn 1s ease-out forwards;
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0.8);
     opacity: 0;
   }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+}
