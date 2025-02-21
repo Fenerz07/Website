@@ -1,13 +1,11 @@
 'use client';
 import '../styles/globals.css';
-import CustomCursor from '../components/customCursor';
 import Header from '../components/header';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body>
-        <CustomCursor />
         <Header />
         <main className="page-container">
           {children}
