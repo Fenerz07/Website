@@ -4,30 +4,32 @@
     --spring_green: #21FA90;
     --office_green: #157F1F;
     --lion: #AD8A64;
-}
+  }
 
 .homePage {
-    color: var(--snow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
     text-align: center;
-    padding-top: 14rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.homePage h1 {
-    font-size: 60px;
-    font-family: 'Arial';
+/* Texte principal stylé */
+.title {
+    font-size: 3.5rem;
     font-weight: bold;
+    color: var(--snow);
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-.homePage p {
-    font-size: 20px;
-}
-
-.rotatingText {
-    animation: fadeInOut 3s infinite;
-}
-
-@keyframes fadeInOut {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
+/* Sous-titre avec effet de flou */
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--snow);
+    margin-top: 1rem;
+    opacity: 0.8;
 }
