@@ -1,0 +1,87 @@
+.animatedArrow {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 80px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.lineContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 80px;
+  width: 300px;
+}
+
+.arrowContainer {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0, -50%);
+  display: block;
+  height: 80px;
+  width: 0;
+  overflow: hidden;
+  transition: all 1000ms ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-20%, -50%) rotate(-45deg);
+  height: 30px;
+  width: 30px;
+  border-bottom: 2px solid var(--snow);
+  border-right: 2px solid var(--snow);
+}
+
+.line,
+.text {
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  border-top: 2px solid var(--snow);
+  transition: all 300ms ease;
+}
+
+.left {
+  left: 12.5%;
+}
+
+.right {
+  left: 87.5%;
+}
+
+.text {
+  border: transparent;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.text h1 {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.animatedArrow:hover .arrowContainer {
+  width: 50px;
+}
+
+.animatedArrow:hover .text {
+  opacity: 0;
+}
+
+.animatedArrow:hover .left {
+  left: 62.5%;
+}
