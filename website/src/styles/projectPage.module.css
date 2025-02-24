@@ -1,0 +1,42 @@
+.page {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.project h2 {
+    margin: 10px 0;
+}
+
+.project p {
+    margin: 10px 0;
+    opacity: 0;
+}
+
+.project:hover img {
+    transition: transform 1s ease;
+    transform: translateY(-5px);
+}
+
+.project:hover p {
+    transition: opacity 1s ease;
+    opacity: 1;
+    color: var(--snow);
+}

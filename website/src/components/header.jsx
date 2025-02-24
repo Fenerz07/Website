@@ -14,6 +14,8 @@ export default function Header() {
                 return 'Accueil';
             case '/about':
                 return 'À propos';
+            case '/project':
+                return 'Projets';
             case '/contact':
                 return 'Me Contacter';
             default:

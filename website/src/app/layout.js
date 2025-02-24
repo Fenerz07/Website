@@ -4,7 +4,7 @@ import Header from '../components/header';
 import SwitchButton from '../components/switchButton';
 
 export default function RootLayout({ children }) {
-  const pages = ['/', '/about', '/contact'];
+  const pages = ['/', '/about', '/project', '/contact'];
 
   return (
     <html lang="fr">
