@@ -1,0 +1,74 @@
+.page {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.experienceContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logos {
+    position: absolute;
+    left: 120px;
+    width: 10rem;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateX(-20px);
+}
+
+.text {
+    position: absolute;
+    right: 120px;
+    width: 10rem;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateX(20px);
+}
+
+.experienceContent:hover .text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.experienceContent:hover .logos {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.experienceContent .image img {
+    filter: grayscale(100%);
+}
+
+.experience h2 {
+    margin: 10px 0;
+}
+
+.experience p {
+    margin: 10px 0;
+}

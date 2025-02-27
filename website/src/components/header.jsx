@@ -16,8 +16,10 @@ export default function Header() {
                 return 'À propos';
             case '/project':
                 return 'Projets';
+            case '/experience':
+                return 'Expérience';
             case '/contact':
-                return 'Me Contacter';
+                return 'Me Contacter';  
             default:
                 return '😅 Page inconnue';
         }

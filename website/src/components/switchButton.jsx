@@ -29,6 +29,8 @@ const SwitchButton = ({ pages }) => {
                 return 'À propos';
             case '/project':
                 return 'Projets';
+            case '/experience':
+                return 'Expérience';
             case '/contact':
                 return 'Contact';
             default:
