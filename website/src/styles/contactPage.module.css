@@ -1,11 +1,3 @@
-:root {
-  --charcoal: #424651;
-  --snow: #fffbfa;
-  --spring_green: #21FA90;
-  --office_green: #157F1F;
-  --lion: #AD8A64;
-}
-
 .page {
   transition: opacity 0.5s ease-in-out;
   color: var(--snow);
