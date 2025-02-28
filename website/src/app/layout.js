@@ -1,4 +1,5 @@
 'use client';
+
 import '../styles/globals.css';
 import Header from '../components/header';
 import SwitchButton from '../components/switchButton';
