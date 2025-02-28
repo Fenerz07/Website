@@ -40,3 +40,28 @@
     opacity: 1;
     color: var(--snow);
 }
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 2rem 2rem 0rem 1rem;
+    }
+
+    .content {
+        grid-template-columns: repeat(2, 50%);
+        width: 100%;
+    }
+
+    .project {
+        padding: 0rem;
+    }
+
+    .project p {
+        margin: 0px 0;
+        opacity: 1;
+    }
+
+    .project img {
+        width: 50%;
+    }
+    
+}

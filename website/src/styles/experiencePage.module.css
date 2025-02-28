@@ -72,3 +72,42 @@
 .experience p {
     margin: 10px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 2rem 2rem 0rem 1rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .experience {
+        padding: 0rem;
+    }
+
+    .experience p {
+        margin: 0px 0;
+    }
+
+    .experienceContent {
+        flex-direction: column;
+    }
+
+    .logos {
+        position: relative;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .text {
+        position: relative;
+        right: 0;
+        width: 100%;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}

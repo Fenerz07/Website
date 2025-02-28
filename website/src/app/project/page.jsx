@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    name: 'SocialNetworkPHP',
+    name: 'SocialNetwork',
     description: 'Un réseau social basé sur PHP et MySQL.',
     html_url: 'https://github.com/Fenerz07/phpSocialNetwork-',
     image: '/images/network.svg'
@@ -28,14 +28,14 @@ const projects = [
   },
   {
     id: 4,
-    name: 'TicTacToeJS',
+    name: 'TicTacToe',
     description: 'Jeu du morpion développé en JavaScript.',
     html_url: 'https://github.com/Fenerz07/TicTacToeJS',
     image: '/images/circlex.svg'
   },
   {
     id: 5,
-    name: 'PokemonJava',
+    name: 'PokemonFight',
     description: 'Tournoi Pokémon développé en Java.',
     html_url: 'https://github.com/Fenerz07/Tournoi-Pokemon-Java',
     image: '/images/bandage.svg'

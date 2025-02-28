@@ -25,6 +25,15 @@ export default function HomePage() {
             >
                 Découvrez moi et mes créations dans mon monde digital.
             </motion.p>
+
+            <motion.p 
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
+                className={styles.description}
+            >
+                ( N&apos;hésitez pas à intéragir avec les éléments de la page )
+            </motion.p>
         </div>
     );
 }

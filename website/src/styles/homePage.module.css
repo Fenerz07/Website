@@ -17,7 +17,6 @@
     overflow: hidden;
 }
 
-/* Texte principal stylé */
 .title {
     font-size: 3.5rem;
     font-weight: bold;
@@ -26,10 +25,34 @@
     letter-spacing: 3px;
 }
 
-/* Sous-titre avec effet de flou */
 .subtitle {
     font-size: 1.5rem;
     color: var(--snow);
     margin-top: 1rem;
     opacity: 0.8;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--snow);
+    margin-top: 0.8rem;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .homePage {
+        margin-top: 10rem;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .description {
+        visibility: visible;
+    }
 }
